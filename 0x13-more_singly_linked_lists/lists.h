@@ -10,15 +10,15 @@
  * @next: Pointer to the next node in the list
  *
  * Description: This structure defines a node for a singly linked list.
- * This structure is designed for use in an ALX project.
+ *              This structure is designed for use in an ALX project.
  */
 typedef struct listint_s
 {
- int n;
- struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
-
+/* Function prototypes */
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
@@ -34,6 +34,5 @@ void free_listint2(listint_t **head);
 int pop_listint(listint_t **head);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int sum_listint(listint_t *head);
-
 
 #endif
